@@ -1,0 +1,37 @@
+header {
+    
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+main {
+    max-width: 1000px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    line-height: 1.5; 
+    letter-spacing: 1px;
+    margin-bottom: 100px;
+}
+section {
+    margin-bottom: 20px;
+}
+h1, h2 {
+    font-size: 24px;
+}
+.image-container {
+    float: left; 
+    margin-right: 20px; 
+    width: 150px;
+    height: 200px; 
+    border: 2px solid lavender; 
+    border-radius: 50%;
+    overflow: hidden;
+}
+.image-container img {
+    width: 150px;
+    height: 200px; 
+    border-radius: 50%;
+}

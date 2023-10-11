@@ -1,0 +1,8 @@
+<main>
+    <ul>
+        <li *ngFor="let item of OrdersList" >
+            Ім'я: {{ item.name }} <img [src]="item.src"/>
+            <br> Замовлення: {{ item.text }} 
+        </li>
+    </ul>
+    </main>

@@ -1,0 +1,36 @@
+
+
+<form action="" *ngIf="selectedItem!=undefined">
+<h1></h1>
+<p>
+    <label for="nameInputSelected">Name</label>
+    <!-- <input id="nameInputSelected" name="name" type="text" [(ngModel)]="selectedItem.name"></input> -->
+</p>
+<p>
+    <label for="isCompleteCheckBoxSelected">isComplete</label>
+    <!-- <input id="isCompleteCheckBoxSelected" name="isComplete" type="checkbox" [(ngModel)]="selectedItem.isComplete"> -->
+</p>
+</form>
+
+<ul class="items">
+    <li [class.selected] = "item ===selectedItem" class="item" *ngFor="let item of todoitems" (click)="onSelect(item)">
+        {{item.id}}:{{item.name}}
+    </li>
+</ul>
+<!-- <div *ngIf="todoitems.length>0">
+    {{todoitems.length}} {{todoitems.length == 1 ? 'item':'items'}}
+</div> -->
+
+<!-- <div [ngSwitch]="car">
+    <p *ngSwitchCase="audi">це audi</p>
+    <p *ngSwitchCase="bmw">це bmw</p>
+    <p *ngSwitchCase="tesla">це tesla</p>
+    <p *ngSwitchCase="ford">це ford</p>
+    <p *ngSwitchDefault="ferari">це ferari</p>
+</div> -->
+
+
+
+
+
+

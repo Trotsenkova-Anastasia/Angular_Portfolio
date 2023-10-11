@@ -1,0 +1,9 @@
+<main>
+    <ul>
+        <li *ngFor="let item of FulfillmentOfTheOrder" >
+            Консультант: {{ item.name }}
+            <br>Замовник: {{item.name_client}}
+            <br> Відповідь: {{ item.text }}
+        </li>
+    </ul>
+</main>
